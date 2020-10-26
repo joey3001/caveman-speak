@@ -1,10 +1,10 @@
-# Grocery List Maker
+# Word Play
 
-## crate a list of grocery items, 10-26-2020
+## Plays with your words!, 10-26-2020
 
 ### Ben McFarland, Joe Nero
 
-Takes in inputed grocery items and puts the list in alphabetical order.
+Takes a sentence and changes the sentence only with those words
 
 ## Setup/Installation Requirements
 

@@ -1,12 +1,19 @@
 $(document).ready(function() {
-  $("#groceryItems").submit(function(event){
+  $("#sentence").submit(function(event){
     event.preventDefault();
-    let array = [$("#itemOne").val(),$("#itemTwo").val(),$("#itemThree").val(),$("#itemFour").val()];
-    array.sort();
-    array.forEach(function(item) {
-      $("#list").append("<li>" + item + "</li>");
-    });
-    $("#groceryItems").hide();
-    $("#result").show();
+    let sentence = $("#sentenceInput").val();
+    let array = sentence.split(" ");
+    let newArray = [];
+    array.forEach(function(element) {
+      if (element.length >= 3) {
+        newArray.push(element);
+      } 
+    })
+    alert(newArray);
+  //  array.forEach(function(item) {
+     // $("#list").append("<li>" + item + "</li>");
+   // });
+   // $("#groceryItems").hide();
+   // $("#result").show();
   });
 });
