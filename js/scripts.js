@@ -9,11 +9,13 @@ $(document).ready(function() {
         newArray.push(element);
       } 
     })
-    alert(newArray);
+    newArray.reverse();
+    let newSentence = newArray.join(" ");
+    alert(newSentence);
   //  array.forEach(function(item) {
      // $("#list").append("<li>" + item + "</li>");
    // });
-   // $("#groceryItems").hide();
-   // $("#result").show();
+   $("#result").append("<p>" + newSentence + "</p>");
+   $("#result").show();
   });
 });
